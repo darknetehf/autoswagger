@@ -1316,7 +1316,6 @@ def main(urls, headers, verbose, include_risk, include_all, product_mode, stats_
                         fut.result()
                     except Exception as exc:
                         if verbose:
-                            logger.exception("Kate")
                             log(f"Error processing URL {u}: {exc}", level="DEBUG")
                     progress.update(task, advance=1)
         else:
